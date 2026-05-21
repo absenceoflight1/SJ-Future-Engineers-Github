@@ -1,26 +1,13 @@
-Engineering materials
-====
+# SJ-Future-Engineers
 
-This repository contains engineering materials of a self-driven vehicle's model participating in the WRO Future Engineers competition in the season 2022.
+The robot is an autonomous, scaled-down vehicle designed to navigate a structured track, avoid obstacles (red and green pillars), and park or change lanes based on visual feedback. The architecture decouples high-level computer vision and path planning from low-level motor actuation and sensor data aggregation.
 
-## Content
+The autonomous vehicle uses a single SPIKE Prime Large Hub as both the high-level logic controller and low-level actuator driver. The robot navigates an obstacle course using color detection and ultrasonic distance mapping, processing all feedback locally on the hub using the Pybricks.
 
-* `t-photos` contains 2 photos of the team (an official one and one funny photo with all team members)
-* `v-photos` contains 6 photos of the vehicle (from every side, from top and bottom)
-* `video` contains the video.md file with the link to a video where driving demonstration exists
-* `schemes` contains one or several schematic diagrams in form of JPEG, PNG or PDF of the electromechanical components illustrating all the elements (electronic components and motors) used in the vehicle and how they connect to each other.
-* `src` contains code of control software for all components which were programmed to participate in the competition
-* `models` is for the files for models used by 3D printers, laser cutting machines and CNC machines to produce the vehicle elements. If there is nothing to add to this location, the directory can be removed.
-* `other` is for other files which can be used to understand how to prepare the vehicle for the competition. It may include documentation how to connect to a SBC/SBM and upload files there, datasets, hardware specifications, communication protocols descriptions etc. If there is nothing to add to this location, the directory can be removed.
-
-## Introduction
-
-_This part must be filled by participants with the technical clarifications about the code: which modules the code consists of, how they are related to the electromechanical components of the vehicle, and what is the process to build/compile/upload the code to the vehicle’s controllers._
-
-## How to prepare the repo based on the template
-
-_Remove this section before the first commit to the repository_
-
-1. Clone this repo by using the `git clone` functionality.
-2. Remove `.git` directory
-3. [Initialize a new public repository on GitHub](https://github.com/new) by following instructions from "create a new repository on the command line" section (appeared after pressing "Create repository" button).
+Steering Mechanism (Ackermann Geometry)
+Instead of differential drive (like a tank), the vehicle utilizes Ackermann steering geometry. This ensures that when the robot turns, all wheels trace concentric circles around a single common center point, preventing the tires from slipping sideways.
+Actuation: A single spike prime motor is linked to the front steering knuckles via adjustable turnbuckles.
+Mechanical Advantage: The steering linkages are configured so that the inner wheel turns at a sharper angle than the outbound wheel during a turn.
+Propulsion: A single SPIKE Large Motor drives the rear axle.
+Color Sensors: Mounted low to the ground, pointing down at the front to recognize boundary lines (blue/orange), or angled forward to evaluate the color signatures of obstacle pillars (red/green). 
+Ultrasonic Sensor: Mounted to the side and front to identify track outer walls or confirm distance to a pillar.
