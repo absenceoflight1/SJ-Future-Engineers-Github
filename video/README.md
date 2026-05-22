@@ -12,6 +12,6 @@ This directory contains the videos with accessible YouTube links below them.
 -<strong>Obstacle Challenge</strong>
     [![Obstacle Challenge Video](https://img.youtube.com/vi/drb0f370XIs/.jpg)](https://youtu.be/drb0f370XIs)
 
-<a href="https://www.youtube.com/watch?v=drb0f370XIs">target="_blank">Yotubel Link</a>
+<a href="https://www.youtube.com/watch?v=drb0f370XIs"target="_blank">Yotubel Link</a>
 
 
