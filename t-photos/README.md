@@ -1,4 +1,5 @@
 Team's photos
 ====
+This is our team photo 
 
-This directory must contain 2 photos of the team (an official one and one funny photo with all team members)
+<img src="team_photo.jpg">alt="Team Photo" />
