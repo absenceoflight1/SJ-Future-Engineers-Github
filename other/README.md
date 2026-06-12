@@ -14,3 +14,10 @@ A camera used to detect blocks and their color.
 <img src="servomotor.jpg"/>
 
 The servo motor is used for moving the camera left and right.
+
+<strong> Power Bank </strong>
+<img src="powerbank.jpg" />
+
+The main power supply is used to run the robot.
+
+All other materials are from LEGO Education Spike.
