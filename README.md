@@ -11,3 +11,7 @@ Mechanical Advantage: The steering linkages are configured so that the inner whe
 Propulsion: A single SPIKE Large Motor drives the rear axle.
 Color Sensors: Mounted low to the ground, pointing down at the front to recognize boundary lines (blue/orange), or angled forward to evaluate the color signatures of obstacle pillars (red/green). 
 Ultrasonic Sensor: Mounted to the side and front to identify track outer walls or confirm distance to a pillar.
+
+# Strategies
+
+The strategy we implemented for Open Challenge is that, after the color sensor first detects whether it is orange or blue, it accelerates based on the direction it is moving. For the Obstacle Challenge, our strategy is that after the color sensor detects a line, whether orange or blue, the robot maneuvers itself into the direction it will run, parallel to the wall.
