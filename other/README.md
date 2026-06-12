@@ -18,6 +18,6 @@ The servo motor is used for moving the camera left and right.
 <strong> Power Bank </strong>
 <img src="powerbank.jpg" />
 
-The main power supply is used to run the robot.
+The main power supply, used to provide voltage for the robot.
 
 All other materials are from LEGO Education Spike.
