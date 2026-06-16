@@ -55,7 +55,7 @@ Implementation: Positioned at the front of the vehicle, directly over the front 
 [BASE](models/FE_NEW_BASE.stl)
 [L HOLDER](models/NEW_FE_LHOLDERR.stl)
 [COVER](models/cover.stl)
-[ULTRASONICHOLDER](models/ultrasonicholder36.stl)
+[ULTRASONICHOLDER](models/newsonicholder.stl)
 ### Power and Sense Management
 
 <p>Power and sense management dictate how our vehicle distributes electrical energy to sustain high-performance operations and how it gathers environmental telemetry to safely solve the track challenges. This subsystem ensures that our computational nodes, sensors, and actuators are adequately powered without experiencing voltage drops or signal degradation.</p>
